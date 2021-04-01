@@ -210,11 +210,11 @@ function htmlEntities(str) {
 
 function read(a)
 {
-//     var html="<br>";
-//     if(a.indexOf("http://") === 0 || a.indexOf("https://") === 0)
-//         html+="<a target='_blank' href='"+a+"'>"+a+"</a><br>";
-//     html+="<b>"+htmlEntities(a)+"</b><br><br>";
-//     document.getElementById("result").innerHTML=html;
+    var html="<br>";
+    if(a.indexOf("http://") === 0 || a.indexOf("https://") === 0)
+        html+="<a target='_blank' href='"+a+"'>"+a+"</a><br>";
+    html+="<b>"+htmlEntities(a)+"</b><br><br>";
+    document.getElementById("result").innerHTML=html;
 	window.location.replace(a);
 }	
 
@@ -298,7 +298,7 @@ function setwebcam()
 function setwebcam2(options)
 {
 	console.log(options);
-// 	document.getElementById("result").innerHTML="- scanning -";
+	document.getElementById("result").innerHTML="- scanning -";
     if(stype==1)
     {
         setTimeout(captureToCanvas, 500);    
@@ -340,7 +340,7 @@ function setwebcam2(options)
 
 function setimg()
 {
-// 	document.getElementById("result").innerHTML="";
+	document.getElementById("result").innerHTML="";
     if(stype==2)
         return;
     document.getElementById("outdiv").innerHTML = imghtml;
@@ -380,9 +380,9 @@ function setimg()
 <!-- <tr><td colspan="3" align="center">
 <img src="down.png"/>
 </td></tr> -->
-<!-- <tr><td colspan="3" align="center">
+<tr><td colspan="3" align="center">
 <div id="result"></div>
-</td></tr> --> 
+</td></tr> 
 </table>
 </div>&nbsp;
 <div id="footer">
