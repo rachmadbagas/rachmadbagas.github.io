@@ -371,8 +371,6 @@ function setimg()
 <td valign="top" align="center" width="50%">
 <table class="tsel" border="0">
 <tr>
-<td><img class="selector" id="webcamimg" src="https://webqr.com/vid.png" onclick="setwebcam()" align="left" /></td>
-<td><img class="selector" id="qrimg" src="https://webqr.com/cam.png" onclick="setimg()" align="right"/></td></tr>
 <tr><td colspan="2" align="center">
 <div id="outdiv">
 </div></td></tr>
@@ -391,7 +389,7 @@ function setimg()
 <h5 align="center">powered by webqr.com</h5>
 </div>
 </div>
-<canvas id="qr-canvas" width="800" height="800"></canvas>
+<canvas id="qr-canvas" style="height:calc(100vh-100px);width:100vw"></canvas>
 <script type="text/javascript">load();</script>
 </body>
 
